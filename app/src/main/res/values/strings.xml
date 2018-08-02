@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Fake Messenger</string>
+    <string name="fake_chat">App: Fake Chats</string>
+    <string name="messenger">Messenger</string>
+    <string name="new_chat">New Chat</string>
+    <string name="double_click">Tap to choose a profile pic</string>
+    <string name="create">CREATE</string>
+    <string name="add">Press the community to add the conversation</string>
+    <string name="cancel">Edit name</string>
+    <string name="selected">Delete</string>
+    <string name="working">Active now</string>
+    <string name="change_namecontact">Save change</string>
+    <string name="enter_character">Please enter your own characters</string>
+    <string name="text_default">You are now connected on Messenger</string>
+    <string name="save_success">Save success</string>
+    <string name="set_as_wallpaper">Set as wallpaper</string>
+    <string name="share">Share facebook</string>
+    <string name="wallpaper_success">Succes</string>
+    <string name="wallpaper_failed">fail</string>
+    <string name="sharing_failed">fail</string>
+    <string name="edit">Edit name: You can change photos or user name</string>
+    <string name="delete">Delete:  You can delete the selected user</string>
+    <string name="selectedd">Selected</string>
+    <string name="cancell">Cancel</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="edit_contact">Edit Contact</string>
+    <string name="delete_contact">Delete Contact</string>
+    <string name="color">Chat Color</string>
+    <string name="clear">Clear Chat</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="camera">Camera Function: Snap Screen Chats</string>
+    <string name="gallery">You can select images from the gallery of your phone to display the chat screen</string>
+    <string name="contact">You can choose who you are, your name, and the name of the person you choose</string>
+    <string name="change_color">You can change photos, colors, and delete chats</string>
+    <string name="sticker">You can choose stickers from the app</string>
+    <string name="add_a_photo">Add a photo</string>
+    <string name="save_change_img">Please select a picture</string>
+
+</resources>

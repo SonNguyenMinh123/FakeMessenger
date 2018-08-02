@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/rl_type1"
+        android:layout_width="40dp"
+        android:visibility="invisible"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivAvatarType1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_user_default" />
+
+        <ImageView
+            android:id="@+id/iv_mes"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom|right"
+            android:paddingLeft="7dp"
+            android:paddingTop="8dp"
+            android:src="@drawable/icon_online" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvSmsType1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/bg_chat_contact"
+        android:maxEms="12"
+        android:layout_toRightOf="@+id/rl_type1"
+        android:maxWidth="200dp"
+        android:padding="8dp"
+        android:text="Type 1"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_type_1"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:visibility="invisible"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/icon_user_default" />
+
+</RelativeLayout>

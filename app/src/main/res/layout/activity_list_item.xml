@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue">
+
+        <minhson.com.fakemessenger.fonts.TextViewRobotoMedium
+            android:id="@+id/tv_messenger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="15dp"
+            android:layout_toLeftOf="@+id/ln_chat"
+            android:gravity="center|left"
+            android:layout_alignParentLeft="true"
+            android:text="@string/messenger"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:id="@+id/ln_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_ic_rate"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@+id/iv_ic_like"
+                android:layout_toRightOf="@+id/tv_messenger"
+                android:src="@drawable/rate" />
+
+            <ImageView
+                android:id="@+id/iv_ic_like"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/share" />
+
+            <ImageView
+                android:id="@+id/iv_tutorial"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/tutorial" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_messenger"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/add"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/bt_create"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bg_plusss"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+    </FrameLayout>
+
+</LinearLayout>

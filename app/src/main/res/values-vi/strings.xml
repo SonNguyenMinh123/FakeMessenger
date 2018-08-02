@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fake Messenger</string>
+    <string name="fake_chat">Ứng dụng: Fake Chats</string>
+    <string name="messenger">Messenger</string>
+    <string name="new_chat">Trò chuyện mới</string>
+    <string name="double_click">Chạm để chọn ảnh tiểu sử</string>
+    <string name="create">THÊM</string>
+    <string name="add">Nhấn nút cộng để thêm cuộc hội thoại</string>
+    <string name="cancel">Sửa tên</string>
+    <string name="selected">Xóa</string>
+    <string name="working">Đang hoạt động</string>
+    <string name="change_namecontact">Lưu thay đổi</string>
+    <string name="enter_character">Vui lòng nhập ký tự của bạn</string>
+    <string name="text_default">Bây giờ bạn đã kết nối với Messenger</string>
+    <string name="save_success">Lưu thành công</string>
+    <string name="set_as_wallpaper">Cài làm hình nền</string>
+    <string name="share">Chia sẻ với facebook</string>
+    <string name="wallpaper_success">Thành công</string>
+    <string name="wallpaper_failed">Thất bại</string>
+    <string name="sharing_failed">Thất bạ</string>
+    <string name="edit">Chỉnh sửa tên: Bạn có thể thay đổi ảnh hoặc tên người dùng</string>
+    <string name="delete">Xoá: Bạn có thể xóa lựa chọn sử dụng</string>
+    <string name="selectedd">Chọn</string>
+    <string name="cancell">Hủy</string>
+    <string name="enter_name">Nhập tên</string>
+    <string name="edit_contact">Chỉnh sửa tên liên lạc</string>
+    <string name="delete_contact">Xóa tên liên lạc</string>
+    <string name="color">Màu cuộc trò chuyện</string>
+    <string name="clear">Xóa nội dung trò chuyện</string>
+    <string name="tutorial">Hướng dẫn</string>
+    <string name="camera">Chụp nhanh màn hình chats</string>
+    <string name="gallery">Chọn ảnh từ gallery của điện thoại để hiển thị lên màn hình chát</string>
+    <string name="contact">Chọn người chát, you là tên của mình, còn lại là tên của người mà bạn chọn</string>
+    <string name="change_color">Thay đổi avatar, sửa tên, xem hướng dẫn và xóa nội dung trò chuyện</string>
+    <string name="sticker">Chọn sticker từ ứng dụng</string>
+    <string name="add_a_photo">Đã thêm 1 ảnh</string>
+    <string name="save_change_img">Vui lòng chọn ảnh</string>
+
+</resources>

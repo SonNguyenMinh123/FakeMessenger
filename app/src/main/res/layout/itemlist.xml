@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_item"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp">
+
+        <FrameLayout
+            android:id="@+id/fl"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_item_user"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_user_default" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="bottom|right"
+                android:paddingTop="8dp"
+                android:paddingLeft="4dp"
+                android:src="@drawable/icon_online" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/ln"
+            android:layout_toRightOf="@+id/fl"
+            android:orientation="vertical"
+            android:paddingLeft="8dp">
+
+            <minhson.com.fakemessenger.fonts.TextViewRobotoMedium
+                android:id="@+id/tv_contact"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center|left|bottom"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <minhson.com.fakemessenger.fonts.TextViewRobotoRegular
+                android:id="@+id/tv_messenger"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="top|left"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="@string/text_default"
+                android:maxWidth="200dp"
+                android:textColor="@color/nhat"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/ln"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_selected_date" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

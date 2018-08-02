@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:gravity="right"
+    android:layout_height="wrap_content">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ivSmsType8"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_like"/>
+
+    <LinearLayout
+        android:layout_marginRight="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivIconsSmsType8"
+            android:layout_width="12dp"
+            android:visibility="invisible"
+            android:layout_height="12dp"
+            android:layout_gravity="center|bottom"
+            android:src="@drawable/icon_selected" />
+    </LinearLayout>
+
+</LinearLayout>

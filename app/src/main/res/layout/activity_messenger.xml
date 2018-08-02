@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_screen_shots"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/ln_messenger"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/blue">
+
+            <LinearLayout
+                android:id="@+id/lnnnBack"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_back_messenger_main"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_back" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/lnnnBack"
+                android:gravity="center|left"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+                <minhson.com.fakemessenger.fonts.TextViewRobotoRegular
+                    android:id="@+id/tv_name_contact"
+                    android:layout_width="130dp"
+                    android:layout_height="20dp"
+                    android:ellipsize="end"
+                    android:gravity="left|bottom"
+                    android:maxLines="1"
+                    android:text="Contact"
+                    android:textColor="#fff"
+                    android:textSize="17sp" />
+
+                <minhson.com.fakemessenger.fonts.TextViewRobotoRegular
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|left"
+                    android:text="@string/working"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/ln"
+                android:gravity="center|left">
+
+                <ImageView
+                    android:id="@+id/iv_phone"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="13dp"
+                    android:src="@drawable/icon_call_phone" />
+
+                <ImageView
+                    android:id="@+id/iv_video"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@+id/iv_phone"
+                    android:src="@drawable/icon_video" />
+
+                <ImageView
+                    android:id="@+id/iv_dots"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/iv_video"
+                    android:src="@drawable/bg_dotss" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_add_a_day"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Ngày của bạn"
+                    android:textColor="@color/blue"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Thêm gì đó vào ngày của bạn"
+                    android:textColor="@color/nhat"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|right"
+                android:layout_gravity="center|right">
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="25dp"
+                    android:paddingRight="20dp"
+                    android:layout_gravity="center|right"
+                    android:src="@drawable/icon_plusss" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/den" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lv_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:divider="@null"
+            android:paddingBottom="3dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/den" />
+
+        <LinearLayout
+            android:id="@+id/ln_micro"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp"
+            android:weightSum="7">
+
+            <ImageView
+                android:id="@+id/iv_plus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:src="@drawable/icon_add"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/iv_camera"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:src="@drawable/icon_camera" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:src="@drawable/icon_picture" />
+
+            <ImageView
+                android:id="@+id/iv_selected"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:src="@drawable/icon_picture"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/icon_micro" />
+
+            <LinearLayout
+                android:id="@+id/ln_aa"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edt">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:text="Aa"
+                    android:textColorHint="@color/nhat"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/iv_smile"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="2dp"
+                    android:src="@drawable/icon_smile" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_like_mesenger"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center|right"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/icon_like" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_send_message"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/iv_down"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/icon_lui" />
+
+                <ImageView
+                    android:id="@+id/iv_pictu"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/icon_pictu" />
+
+                <LinearLayout
+                    android:id="@+id/ln_name_contact"
+                    android:layout_width="200dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_chat_you">
+
+                    <TextView
+                        android:id="@+id/tv_name_change_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="center|left"
+                        android:maxLines="1"
+                        android:paddingLeft="10dp"
+                        android:text="Contact"
+                        android:textColor="#fff"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_send"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="13dp"
+                    android:layout_weight="0.05"
+                    android:src="@drawable/send_button" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:gravity="center|top">
+
+                <EditText
+                    android:id="@+id/edt_write"
+                    android:layout_width="290dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:paddingLeft="5dp"
+                    android:gravity="center|left|top"
+                    android:hint="Write a message...">
+
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/iv_likeeee"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center|right|top"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/icon_like" />
+
+                <ImageView
+                    android:id="@+id/iv_smile_messenger"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/icon_smile" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
